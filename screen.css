@@ -308,7 +308,117 @@ h1 span{
     bottom: 10px;
 }
 
-@media screen and (min-width: 790px) { /* Leaving media query in pixels for class demo */
+@media screen and (min-width: 1280px) {
+    /* Leaving media query in pixels for class demo */
+    #container_1 section {
+        font-family: 'Open Sans', cursive, sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        color: white;
+        background: rgba(40, 40, 40, .8);
+        margin: 20em auto 12em 30em;
+        padding: 2em;
+        width: 40%;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        align-self: flex-end;
 
     }
+
+    #panel {
+        background-color: #F2F3F4;
+        width: 20%;
+        height: auto;
+        padding: 1.5em;
+        margin: 8em 1em 4em 40%;
+        line-height: 1.5em;
+        border-radius: 10px;
+        align-self: flex-end;
+        position: relative;
+        box-shadow: -5px 10px 11px 1px #696969;
+
+    }
+
 }
+
+@media screen and (min-width: 800px) { /* Leaving media query in pixels for class demo */
+
+    #container_1 section{
+
+        margin: 10em auto 12em auto;
+        padding: 2em;
+        width: 40%;
+        -webkit-border-radius: 10px;
+        border-radius:10px;
+        align-self: flex-end;
+
+    }
+
+    #spotlight{
+        width: 60%;
+        height: auto;
+        background-color: rgba(128, 183, 203, .9);
+        border-radius: 10px;
+        margin-top: 0;
+        margin-left: 35%;
+        bottom: 15em;
+        padding: 1.5em;
+        order: 2;
+    }
+    #panel{
+        background-color: #F2F3F4;
+        width:20%;
+        height: auto;
+        padding:1.5em;
+        margin: 8em 1em 4em 40%;
+        line-height: 1.5em;
+        border-radius: 10px;
+        align-self:flex-end;
+        position: relative;
+        box-shadow: -5px 10px 11px 1px #696969;
+
+    }
+    @media screen and (min-width: 360px) { /* Leaving media query in pixels for class demo */
+
+        #container_1 section{
+            font-family: 'Open Sans', cursive, sans-serif;
+            font-size: 1em;
+            line-height: 1.5;
+            color: white;
+            background: rgba(40, 40, 40, .8);
+            margin: 20em auto 12em 30em;
+            padding: 2em;
+            width: 40%;
+            -webkit-border-radius: 10px;
+            border-radius:10px;
+            align-self: flex-end;
+
+        }
+
+        #spotlight{
+            width: 60%;
+            height: auto;
+            background-color: rgba(128, 183, 203, .9);
+            border-radius: 10px;
+            margin-top: 0;
+            margin-left: 35%;
+            bottom: 15em;
+            padding: 1.5em;
+            order: 2;
+        }
+        #panel{
+            background-color: #F2F3F4;
+            width:20%;
+            height: auto;
+            padding:1.5em;
+            margin: 8em 1em 4em 40%;
+            line-height: 1.5em;
+            border-radius: 10px;
+            align-self:flex-end;
+            position: relative;
+            box-shadow: -5px 10px 11px 1px #696969;
+
+        }
+
+
+    }
