@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*My css starts here...*/
+html {
+    background-color: #FFFFFF;
+}
+
+
+body {
+
+
+}
+
+#container_1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: auto;
+    background: url("photos/largest.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 3em;
+}
+
+
+
+#brand{
+    text-align:center;
+    background: rgba(40, 40, 40, .8);
+    padding:1em;
+    height: auto;
+    color: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+}
+
+/*min-width*/
+/*relative units em, %, */
+/*flexible grids*/
+
+#brand h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+}
+h1 span{
+    color: #008000;
+}
+#brand h2{
+    font-family: 'Limelight', cursive, sans-serif;
+    font-size: 3.7em;
+    color: #00FFFF;
+    line-height: 1.5em;
+}
+#brand h3{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #008000;
+    line-height: 1.5em;
+}
+
+#container_1 section{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: white;
+    background: rgba(40, 40, 40, .8);
+    margin: 20em auto 12em 30em;
+    padding: 2em;
+    width: 40%;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+    align-self: flex-end;
+
+}
+#container_1 section h2{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5em;
+}
+
+#container_1 section h3{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 1.25em;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.5em;
+}
+
+#container_2 {
+
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+
+    background-color: cornsilk;
+
+    margin: 2em auto 0 auto;
+    padding: .5em;
+    height: auto;
+    width: auto;
+}
+
+.featured{
+ text-align: left;
+
+}
+
+.featured h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 4em;
+    line-height: 1.5em;
+    color: black;
+    margin-left: 5%;
+    margin-top: 3%;
+    order: 1;
+}
+.featured h1{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: black;
+    margin-left: 5%;
+
+}
+.featured figure img{
+    margin: 1em;
+    padding: 1em;
+    width: 30%;
+    height:30%;
+}
+#spotlight{
+    width: 60%;
+    height: auto;
+    background-color: rgba(128, 183, 203, .9);
+    border-radius: 10px;
+    margin-top: 0;
+    margin-left: 35%;
+    bottom: 15em;
+    padding: 1.5em;
+    order: 2;
+}
+
+#spotlight img{
+    width:35%;
+    height:35%;
+}
+#spotlight p{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em auto 1em auto;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+#panel{
+    background-color: #F2F3F4;
+    width:20%;
+    height: auto;
+    padding:1.5em;
+    margin: 8em 1em 4em 40%;
+    line-height: 1.5em;
+    border-radius: 10px;
+    align-self:flex-end;
+    position: relative;
+    box-shadow: -5px 10px 11px 1px #696969;
+
+}
+
+#panel h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: black;
+    font-variant: all-petite-caps;
+    font-weight: 600;
+    text-align: center;
+}
+
+#panel p{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    font-variant: all-petite-caps;
+    margin: .5em auto 2em auto;
+    text-align: justify;
+}
+
+
+
+
+#container_3{
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    background-color: slategray;
+}
+
+#container_3 section h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 4em;
+    line-height: 1.5em;
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%
+}
+
+.container_4{
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: row  nowrap;
+    -webkit-flex-flow: row wrap;
+    background-color: #dedede;
+}
+.contactUs{
+
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-style: italic;
+    color: black;
+    width: auto;
+    height: auto;
+    margin: .5em;
+    line-height: 1.5em;
+    order: 3;
+    align-self: flex-end;
+
+   }
+
+.contactUs span{
+    display: block;
+}
+
+.contactUs p{
+    font-weight: 900;
+}
+
+
+#slideshow {
+    margin: auto 35% 10% 30%;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
