@@ -307,3 +307,8 @@ h1 span{
     right: 10px;
     bottom: 10px;
 }
+
+@media screen and (min-width: 790px) { /* Leaving media query in pixels for class demo */
+
+    }
+}
