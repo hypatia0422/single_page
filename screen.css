@@ -157,6 +157,7 @@ h1 span{
 
 .featured{
  text-align: left;
+    display:block;
 
 }
 
@@ -178,18 +179,19 @@ h1 span{
 
 }
 .featured figure img{
-    margin: 1em;
+    margin: 8em 1em 0 1em;
     padding: 1em;
     width: 30%;
     height:30%;
+    border-radius: 30px;
 }
 #spotlight{
-    width: 60%;
+    width: 55%;
     height: auto;
     background-color: rgba(128, 183, 203, .9);
     border-radius: 10px;
-    margin-top: 0;
-    margin-left: 35%;
+    margin-top: -550px;
+    margin-left: 40%;
     bottom: 15em;
     padding: 1.5em;
     order: 2;
@@ -197,7 +199,8 @@ h1 span{
 
 #spotlight img{
     width:35%;
-    height:35%;
+    height:auto;
+
 }
 #spotlight p{
     font-family: 'Open Sans', cursive, sans-serif;
@@ -295,8 +298,8 @@ h1 span{
 #slideshow {
     margin: auto 35% 10% 30%;
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 37.5em;
+    height: 25em;
     padding: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
