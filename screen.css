@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -107,6 +108,20 @@ h1 span{
     color: #008000;
     line-height: 1.5em;
 }
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+
+sup {
+top: -0.4em;
+}
+
+sub {
+bottom: -0.25em;
+}
 
 #container_1 section{
     font-family: 'Open Sans', cursive, sans-serif;
@@ -114,7 +129,7 @@ h1 span{
     line-height: 1.5;
     color: white;
     background: rgba(40, 40, 40, .8);
-    margin: 20em auto 12em 30em;
+    margin: 10em;
     padding: 2em;
     width: 40%;
     -webkit-border-radius: 10px;
@@ -128,14 +143,17 @@ h1 span{
     font-weight: 600;
     color: #ffffff;
     line-height: 1.5em;
+    text-align: center;
 }
 
 #container_1 section h3{
     font-family: 'Open Sans', cursive, sans-serif;
+    font-style: italic;
     font-size: 1.25em;
     font-weight: 800;
     color: #ffffff;
     line-height: 1.5em;
+    text-align: center;
 }
 
 #container_2 {
