@@ -95,7 +95,7 @@ body {
     color: #FFFFFF;
 }
 h1 span{
-    color: #008000;
+    color:  #0CBA52;
 }
 #brand h2{
     font-family: 'Limelight', cursive, sans-serif;
@@ -107,7 +107,7 @@ h1 span{
     font-family: 'Open Sans', cursive, sans-serif;
     font-size: 2em;
     font-weight: 600;
-    color: #008000;
+    color: #0CBA52;
     line-height: 1.5em;
 }
 sub, sup {
@@ -148,19 +148,22 @@ bottom: -0.25em;
 
 #nav li {
     display: inline;
-    padding: 1.25em;
+    padding: .5em;
 }
 
 #nav a {
     text-decoration: none;
     color: #ffffff;
-    padding: .5em;
+    padding: .25em;
 }
 
-#menu a:hover {
-    color: #F90;
-    background-color: #FFF;
+#nav li:hover {
+    color: #844AD2;
+    background-color: rgba(0,0,0, .5);
+    width: 150%;
+    border-radius: 6px;
 }
+
 
 #container_1 section{
     font-family: 'Open Sans', cursive, sans-serif;
@@ -212,6 +215,32 @@ bottom: -0.25em;
     width: auto;
 }
 
+#nav2 ul {
+    height: auto;
+    padding: .5em 0;
+    margin: 2em 0 0 2em;
+}
+
+#nav2 li {
+    display: inline;
+    background-color: rgba(128, 183, 203, .75);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+#nav2 a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1em;
+}
+
+#nav2 li:hover {
+    background-color: #D93600;
+    color: #ffffff;
+    width: 150%;
+    border-radius: 8px;
+}
+
 .featured{
  text-align: left;
     display:block;
@@ -220,20 +249,23 @@ bottom: -0.25em;
 
 .featured h2{
     font-family: 'Open Sans', italic, sans-serif;
-    font-size: 4em;
+    font-size: 6em;
     line-height: 1.5em;
+    font-weight: bolder;
+    text-shadow: 5px 5px rgba(128, 183, 203, .75);
+    text-align: center;
     color: black;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 1em;
     order: 1;
 }
 .featured h1{
-    font-family: 'Open Sans', italic, sans-serif;
-    font-size: 2em;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
     line-height: 1.5em;
     color: black;
-    margin-left: 5%;
-
 }
 .featured figure img{
     margin: 8em 1em 0 1em;
@@ -254,9 +286,14 @@ bottom: -0.25em;
     order: 2;
 }
 
-#spotlight img{
-    width:35%;
+#vivi{
+    width:50%;
     height:auto;
+    float:right;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 5px 10px 11px 1px #696969;
+
 
 }
 #spotlight p{
@@ -268,6 +305,20 @@ bottom: -0.25em;
     text-indent: 2em;
 }
 
+  #spotlight p span{
+    font-weight: bold;
+    font-size: 4em;
+    font-family: serif;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    color: #ffffff;
+  }
+  #spotlight .firma img{
+    width: 20em;
+    height: 15em;
+    margin-left: 7em;
+
+  }
 #panel{
     background-color: #F2F3F4;
     width:20%;
