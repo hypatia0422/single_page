@@ -11,6 +11,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
 	<script src= "jquery-1.12.1.min.js"></script>
 	<link rel="stylesheet"  href="screen.css">
 
@@ -27,7 +28,7 @@
 				<div id="nav">
 					<nav>
 					  <ul>
-					    <li><a href="#featArtist">Featured Artist</a></li>
+					    <li><a class="active" href="#featArtist">Featured Artist</a></li>
 							<span> | </span>
 					    <li><a href="#nzandevnts">News & Events</a></li>
 							<span> | </span>
@@ -36,9 +37,8 @@
 							<li><a href="#signup">SignUp</a></li>
 					  </ul>
 					</nav>
-				</div>
-			</div>
-
+				</div> <!-- closes the nav id div -->
+			</div><!--closes off the brand id div -->
 		</header>
 
 		<section>
@@ -52,27 +52,36 @@
 
 			 <p>Our reputation for showing high quality work has attracted leading international galleries and collectors,
 				 offering visitors the most important art from around the world.</p>
-
 		</section>
-	</div>
+	</div>  <!--closes container 1 div -->
 
-  <div class="container_2">
-	  <div id="featArtist" class="featured">
+  <div id="featArtist" class="container_2">
+		<div id="nav2">
+			<nav>
+				<ul>
+					<li><a href="container_1">Top of Page</a></li>
+					<li><a href="#signup">SignUp</a></li>
+				</ul>
+			</nav>
+		</div> <!-- closes the nav id div -->
+	</div><!--closes off the brand id div -->
+		<div  class="featured">
 		  <h2>Our Featured Artist</h2>
 		  <h1>Viviana Puello</h1>
-		  <figure>
+			<figure>
 			  <img src="photos/collage.png" >
 			  <figcaption>
 
 			  </figcaption>
 		  </figure>
-	  </div>
+	  </div><!-- closes the featured artist div -->
+
 
 
 	  <div id="spotlight">
-		  <img src="photos/vivi.jpg" alt="Photo of Viviana Puello" title="Viviana"  id="vivi"/>
+		  <img id="vivi" src="photos/vivi.jpg" alt="Photo of Viviana Puello" title="Viviana"  />
 
-       <p> An internationally-acclaimed artist, curator, painter, writer and activist, Viviana Puello is highly
+       <p><span>A</span>n internationally-acclaimed artist, curator, painter, writer and activist, Viviana Puello is highly
 	       recognized for her work as the diligent Art Director of the acclaimed ArtTourInternational Magazine - a
 	       prestigious publication that, issue after issue, is winning the hearts of so many artists and taking the
 	       art world by storm.</p>
@@ -110,7 +119,7 @@
 
 
 	       <p>Vivana can be contacted through her email address: vp@arttourinternational.com..</p>
-		     <div class="firma"><img src="photos/vivi%20FIRMA%20definitiva.png" class="firma" /> </div>
+		     <div class="firma"><img src="photos/vivi%20FIRMA%20definitiva.png"/></div>
 	  </div>
 
 	  <div id="panel" >
