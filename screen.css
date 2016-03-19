@@ -64,10 +64,11 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
     height: auto;
     background: url("photos/largest.jpg") no-repeat center;
     background-size: cover;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 
@@ -75,6 +76,7 @@ body {
 #brand{
     text-align:center;
     background: rgba(40, 40, 40, .8);
+    margin-bottom: 2em;
     padding:1em;
     height: auto;
     color: #FFFFFF;
@@ -123,13 +125,50 @@ sub {
 bottom: -0.25em;
 }
 
+#nav{
+    width: 45em;
+    height: 2em;
+    font-size: 1em;
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: none;
+    border-radius: 10px;
+
+
+}
+
+#nav ul {
+    height: auto;
+    padding: .5em 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline;
+    padding: 1.25em;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: .5em;
+}
+
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+
 #container_1 section{
     font-family: 'Open Sans', cursive, sans-serif;
     font-size: 1em;
     line-height: 1.5;
     color: white;
     background: rgba(40, 40, 40, .8);
-    margin: 10em;
+    margin: 15em auto 5em auto;
     padding: 2em;
     width: 40%;
     -webkit-border-radius: 10px;
@@ -327,4 +366,12 @@ bottom: -0.25em;
     left: 10px;
     right: 10px;
     bottom: 10px;
+}
+
+@media screen and(min-width: 700px){
+
+}
+
+@media screen and(min-width: 500px){
+
 }
