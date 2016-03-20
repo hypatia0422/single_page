@@ -64,7 +64,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background: url("photos/largest.jpg") no-repeat center;
     background-size: cover;
@@ -84,9 +84,7 @@ body {
     align-self: center;
 }
 
-/*min-width*/
-/*relative units em, %, */
-/*flexible grids*/
+
 
 #brand h1{
     font-family: 'Open Sans', sans-serif;
@@ -198,6 +196,11 @@ bottom: -0.25em;
     text-align: center;
 }
 
+#video{
+  max-width: 100%;
+  display: block;
+}
+
 #container_2 {
 
     display: flex;
@@ -207,12 +210,12 @@ bottom: -0.25em;
     align-items: baseline;
     -webkit-align-items: baseline;
 
-    background-color: cornsilk;
-
+    background-color: #dedede;
     margin: 2em auto 0 auto;
     padding: .5em;
+    max-width: 100%;
     height: auto;
-    width: auto;
+
 }
 
 #nav2 ul {
@@ -361,7 +364,7 @@ figcaption q{
   flex-wrap: wrap;
   -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
-  background-color: rgba(140, 134, 158, .4);
+  background-color: rgba(192, 195, 223, .5);
   padding: 2em;
   margin-top: 4em;
 
@@ -478,8 +481,9 @@ figcaption q{
     font-size: 4em;
     line-height: 1.5em;
     color: white;
-    margin-left: 5%;
-    margin-top: 5%
+    margin: 0 auto auto 30%;
+    padding: 1em;
+    text-shadow: 5px 5px #696969;
 }
 
 #nav4 ul {
@@ -515,17 +519,20 @@ figcaption q{
     -webkit-display: flex;
     flex-flow: row  nowrap;
     -webkit-flex-flow: row wrap;
-    background-color: #dedede;
+
+    background-color: #000000;
 }
 .contactUs{
 
     font-family: 'Open Sans', cursive, sans-serif;
     font-style: italic;
-    color: black;
+    text-align: center;
+    line-height: 1.5em;
+    color: #ffffff;
     width: auto;
     height: auto;
-    margin: .5em;
-    line-height: 1.5em;
+    margin: .5em auto auto 10em;
+    padding:1em 1em 1em 5em;
     order: 3;
     align-self: flex-end;
 
@@ -539,6 +546,21 @@ figcaption q{
     font-weight: 900;
 }
 
+#footer-nav h3{
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color:#D5D5D5;
+  padding: .5em;
+}
+
+#footer-nav img{
+   width: 12%;
+   height: auto;
+   margin-left: 5%;
+
+}
 
 #slideshow {
     margin: auto 35% 10% 30%;
@@ -556,12 +578,9 @@ figcaption q{
     bottom: 10px;
 }
 
-#nzandevnts h2{
-  font-family: 'Open Sans', cursive, sans-serif;
-  margin: auto auto .5em 30%;
-  padding: 1em;
-}
-
+/*min-width*/
+/*relative units em, %, */
+/*flexible grids*/
 @media screen and(min-width: 700px){
 
 }
