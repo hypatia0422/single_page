@@ -3,50 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /*My css starts here...*/
 html {
   background-color: #000000;
@@ -60,11 +17,13 @@ html {
     justify-content: center;
     max-width: 100%;
     height: auto;
-    /*background: url("photos/largest.jpg") no-repeat center;*/
     background-size: 100%;
     background-position: center;
 }
 
+.nav{
+    display: none;
+}
 #brand{
     text-align:center;
     background: rgba(40, 40, 40, .8);
@@ -107,54 +66,21 @@ sup {
 sup {
     top: -0.4em;
 }
-
-/*#nav{
-    width: auto;
-    height: 2em;
-    font-size: 1em;
-    font-family: 'Open Sans', cursive, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-align: left;
-    border-radius: 10px;
-}
-
-#nav ul {
-    height: auto;
-    padding: .5em 0;
-    margin: 0;
-}
-
-#nav li {
-    display: inline;
-    padding: .5em;
-}
-
-#nav a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: .25em;
-}
-
-#nav li:hover {
-    color: #844AD2;
-    background-color: rgba(0,0,0, .5);
-    width: 100%;
-    border-radius: 6px;
-}*/
-
 #container_1 section{
     font-family: 'Open Sans', cursive, sans-serif;
     font-size: 1em;
     line-height: 1;
+
     color: white;
-    /*background: rgba(40, 40, 40, .8);*/
     padding: .25em;
     max-width: 100%;
-   /* -webkit-border-radius: 10px;
-    border-radius:10px;*/
     align-self: flex-end;
 
+
+}
+
+#container_1 section{
+   align-self: center;
 
 }
 
@@ -168,7 +94,7 @@ sup {
 }
 
 #container_1 section h3{
-    font-family: 'Open Sans', cursive, sans-serif;
+    font-family: inherit;
     font-style: italic;
     font-size: 1em;
     font-weight: 800;
@@ -209,8 +135,6 @@ video{
     -webkit-flex-flow: column;
     align-items: baseline;
     -webkit-align-items: baseline;
-
-
     background-color: #dedede;
     margin: 2em auto 0 auto;
     padding: .5em;
@@ -219,38 +143,10 @@ video{
 
 }
 
-#nav2 ul {
-    height: auto;
-    padding: .5em 0;
-    margin: 2em 0 0 2em;
-
-}
-
-#nav2 li {
-    display: inline;
-    background-color: rgba(128, 183, 203, .75);
-    padding: 1em;
-    border-radius: 8px;
-}
-
-#nav2 a {
-    text-decoration: none;
-    color: #000000;
-    padding: 1em;
-}
-
-#nav2 li:hover {
-    background-color: rgba(128, 183, 203, .25);
-    color: #ffffff;
-    width: 150%;
-    border-radius: 8px;
-}
-
 .featured{
     text-align: left;
     display:block;
     background-color: azure;
-
 }
 
 .featured h2{
@@ -260,6 +156,7 @@ video{
     font-weight: bolder;
     text-shadow: 2px 2px rgba(128, 183, 203, .75);
     text-align: center;
+    padding: .5em 0 .5em 0;
     color: black;
     order: 1;
 }
@@ -275,29 +172,32 @@ video{
     border-radius: 5px;
 }
 
-.featured h3{
+.featured figcaption{
     font-family: 'Bilbo Swash Caps', cursive;
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
     font-weight: bold;
+    color: black;
     margin: .75em auto .25em auto;
 }
 
 .featured figcaption p{
     font-family: 'Open Sans', italic, sans-serif;
     font-size:1em;
-    margin:0;
-    padding: .15em;
+    padding: .75em;
 
 }
 
 figcaption h4{
-
     font-family: 'Bilbo Swash Caps', cursive;
     font-size: 1em;
     margin: 0;
-    padding: 0;
+    padding: .5em;
     text-align: center;
+}
+
+#artistBio{
+    display: none;
 }
 
 
@@ -308,14 +208,18 @@ figcaption h4{
     order: 2;
 }
 
+#spotlight input{
+    border-radius: 5px;
+    background-color: rgba(192, 195, 223, .5);
+    margin: 1em;
+}
+
 #vivi{
     width:100%;
     height:auto;
     margin-top: 1em;
     border-radius: 5px;
-    box-shadow: 5px 10px 11px 1px #696969;
-
-
+    box-shadow: 5px 10px 11px 1px #696969
 }
 #spotlight p{
     font-family: 'Open Sans', cursive, sans-serif;
@@ -351,74 +255,37 @@ figcaption h4{
     align-content: space-around;
     background: url("photos/largest.jpg") no-repeat;
     background-size: cover;
-
     background-color: rgba(192, 195, 223, .5);
     padding: 2em;
 }
 
-div #nav3{
-    width: 100%;
-    align-self: flex-start;
-}
-
-#nav3 ul {
-    height: auto;
-    padding: .5em 0;
-    margin: 2em 0 0 auto;
-
-}
-
-#nav3 li {
-    display: inline;
-    background-color: rgba(0, 0, 0, .75);
-    padding: 1em;
-    border-radius: 8px;
-}
-
-#nav3 a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1em;
-}
-
-#nav3 li:hover {
-    background-color: rgba(0, 0, 0, .25);
-    color: #ffffff;
-    border-radius: 8px;
-}
-
 #panel{
 
-    background-color: rgba(254, 254, 250, .5);
-    max-width:100%;
+    /*background-color: rgba(254, 254, 250, .5);*/
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #ffffff;
     height: auto;
     margin: 0;
     padding: .2em;
     line-height: 1em;
     border-radius: 10px;
     align-self: center;
-    /*box-shadow: -5px 10px 11px 1px #696969;*/
-
 }
 
 #panel h2{
     font-family: 'Open Sans', italic, sans-serif;
     font-size: 1.25em;
     line-height: 1em;
-    color: black;
+    color: #ffffff;
     font-variant: all-petite-caps;
     font-weight: 600;
     text-align: center;
 }
 
 #panel p{
-    font-family: 'Open Sans', italic, sans-serif;
-    font-size: 1em;
-    line-height: 2em;
-    color: black;
-    font-variant: all-petite-caps;
-    padding: 2em auto 2em auto;
-    text-align: left;
+    display: none;
+
+
 }
 
 #signUpInput{
@@ -435,6 +302,13 @@ div #nav3{
     border-radius: 10px;
     height: 2em;
     margin: .2em 25% 2em 25%;
+}
+
+figcaption{
+    font-family: inherit;
+    font-size: 1em;
+    color: #ffffff;
+    margin: .5em 0 .5em .25em;
 }
 
 #container_3{
@@ -454,32 +328,7 @@ div #nav3{
     text-shadow: 2px 2px #696969;
 }
 
-#nav4 ul {
-    height: auto;
-    padding: .5em 0;
-    margin: 2em 0 0 2em;
 
-}
-
-#nav4 li {
-    display: inline;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 1em;
-    border-radius: 8px;
-}
-
-#nav4 a {
-    text-decoration: none;
-    color: #000000;
-    padding: 1em;
-}
-
-#nav4 li:hover {
-    background-color: rgba(255, 255, 255, .25);
-    color: #ffffff;
-    width: 150%;
-    border-radius: 8px;
-}
 
 figure img{
     width:100%;
@@ -501,11 +350,9 @@ figure img{
     color: #ffffff;
     width: auto;
     height: auto;
-    /*margin: .5em auto auto 10em;*/
     padding:.25em;
     order: 3;
     align-self: center;
-
 }
 
 .contactUs span{
@@ -535,66 +382,119 @@ figure img{
 
 }
 
-#slideshow {
-    margin: auto 35% 10% 30%;
-    position: relative;
-    width: 37.5em;
-    height: 25em;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-#slideshow > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+@media screen and (min-width: 400px) {
+     #panel{
+         margin-bottom: 10em;
+     }
 }
 
-/*min-width*/
-/*relative units em, %, */
-/*flexible grids*/
-@-webkit-viewport{
-    width:device-width;
-}
-@-moz-viewport{
-    width:device-width;
-}
-
-@-ms-viewport{
-    width:device-width;
-}
-
-@-o-viewport{
-    width:device-width;
-}
-
-@viewport{
-    width:device-width;
-}
-
-
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 500px){
     /*  Adjustments for the Header in Featured Artist*/
-    /*.featured h2{
-        font-size: 4em;
-        font-weight: bold;
-    }*/
-    /* adjustments for the signup login sheets */
-    /*div > #nav3{
-      width: 100%;
+    #brand h1{
+        font-size: 2em;
     }
-
-    #nav3 li{
-      width: 85%;
-      padding: .75em;
+    #brand h2{
+        font-size: 3em;
     }
-
-    #panel{
-      margin: 10em 4em 7em -7em;
-    }*/
 }
 
-@media screen and(max-width: 1024px){
+@media screen and (min-width: 650px){
+    #panel{
+        margin-bottom: 15em;
+    }
+    div#signup div#panel p{
+        display: block;
+        font-family: 'Open Sans', italic, sans-serif;
+        font-size: 1em;
+        line-height: 1.75em;
+        color: #ffffff;
+        font-variant: all-petite-caps;
+        padding: 2em;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 750px){
+    #spotlight input{
+        width: 30%;
+        height: 2.75em;
+        margin: 1em;
+    }
+    #panel{
+        max-width:75%;
+        padding: .5em;
+        margin-top: 5em;
+
+    }
+
+    #nzandevnts figure{
+        margin-left: 10%;
+    }
+    .featured h2{
+        font-size: 3em;
+    }
+    .featured h1 {
+        font-size: 2em;
+    }
+    div.featured figure figcaption h3{
+        font-size: 2em;
+    }
+    div.featured figure figcaption{
+        font-size: 1.2em;
+    }
+    #artistBio{
+        display: block;
+    }
+    #spotlight input{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 850px){
+    #panel{
+        padding: 1em;
+    }
+    .nav{
+        display: block;
+    }
+    .nav ul {
+        height: auto;
+        padding: .5em 0;
+        margin: 0;
+    }
+    .nav li {
+        display: inline;
+        padding: .5em;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: .25em;
+    }
+
+    .nav li:hover {
+        color: #844AD2;
+        background-color: rgba(0,0,0, .5);
+        width: 100%;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #panel{
+        margin-bottom: 20em;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px){
+    #panel{
+        width: 60%;
+        margin-bottom: 25em;
+    }
+
 
 }
