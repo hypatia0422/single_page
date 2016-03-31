@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*My css starts here...*/
+html {
+  background-color: #000000;
+}
+/* Main 1st container of page  */
+#container_1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    background-size: 100%;
+    background-position: center;
+    background: -moz-linear-gradient(top, rgba(174,188,191,.75) 0%, rgba(110,119,116,.80) 35%, rgba(10,14,10,.75) 95%, rgba(10,8,9,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(174,188,191,.75) 0%,rgba(110,119,116,.80) 35%,rgba(10,14,10,.75) 95%,rgba(10,8,9,1) 100%);
+    background: linear-gradient(to bottom, rgba(174,188,191,.75) 0%,rgba(110,119,116,.80) 35%,rgba(10,14,10,.75) 95%,rgba(10,8,9,1) 100%);
+}
+.nav{
+    display: none;
+}
+#brand{
+    text-align:center;
+    background: rgba(40, 40, 40, .8);
+    padding:.5em;
+    height: auto;
+    color: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+}
+#brand h1{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    color: #FFFFFF;
+}
+h1 span{
+    color:  #0CBA52;
+}
+#brand h2{
+    font-family: 'Limelight', cursive, sans-serif;
+    font-size: 2em;
+    color: #00FFFF;
+}
+#brand h3{
+    font-size: 1em;
+    font-weight: 600;
+    color: #0CBA52;
+}
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.4em;
+}
+#aboutUs{
+    display: none;
+}
+div#container_1 section input{
+    border-radius: 10px;
+    background-color: rgba(0,0,0, .75) ;
+    color: #00FFFF;
+    margin: .25em;
+    width: 95%;
+    height:2em;
+
+}
+#container_1 section{
+    font-size: 1em;
+    color: white;
+    padding-top: .75em;
+    max-width: 90%;
+    align-self: center;
+}
+div#container_1 section p{
+    font-family: 'Open Sans', italic, sans-serif;
+    line-height: 1.25em;
+    text-align: left;
+    padding: .5em;
+}
+#container_1 section h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+}
+#container_1 section h3{
+    font-family: inherit;
+    font-style: italic;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: #967AF2;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,.75);
+
+}
+/*end of container 1 styling*/
+
+
+/*begin styling for signup part*/
+#signup{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    background: url("photos/largest.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(192, 195, 223, .5);
+    padding: 2em;
+}
+#panel{
+    /*background-color: rgba(254, 254, 250, .5);*/
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #ffffff;
+    height: auto;
+    margin: 0;
+    padding: .2em;
+    line-height: 1em;
+    border-radius: 10px;
+    align-self: center;
+}
+#panel h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 1.25em;
+    line-height: 1em;
+    color: #ffffff;
+    font-variant: all-petite-caps;
+    font-weight: 600;
+    text-align: center;
+}
+#panel p{
+    display: none;
+}
+#signUpInput{
+    min-width: 75%;
+    height: 1.5em;
+    border-radius:10px;
+    margin: 1.2em;
+}
+#inputButton{
+    background-color: rgba(0, 0, 0, .75);
+    width: 7em;
+    color: white;
+    border-radius: 10px;
+    height: 2em;
+    margin: .2em 25% 2em 25%;
+}
+/*end of styling for signup*/
+
+/*begin styling for video*/
+#videoCont{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #000000;
+}
+#video h1{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgba(193, 198, 237,.5);
+    text-align: center;
+    color: #747FF4;
+    background-color: #000000;
+}
+video{
+    max-width: 100%;
+    align-self: center;
+}
+/*end of styling for video container*/
+
+/*begin styling for news and events container, container 3*/
+#container_3{
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    background-color: rgba(112, 128, 144, .75);
+}
+#container_3 section h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+    color: white;
+    padding: .2em;
+    text-shadow: 2px 2px #696969;
+}
+figure img{
+    width:100%;
+}
+/*end news and events container, container 3*/
+
+/*begin styling for featured artist, container 2*/
+#container_2 {
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    background-color: #dedede;
+    margin: 2em auto 0 auto;
+    padding: .5em;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.featured{
+    text-align: left;
+    display:block;
+    background-color: azure;
+}
+
+.featured h2{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size: 1.75em;
+    line-height: 1em;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgba(128, 183, 203, .75);
+    text-align: center;
+    padding: .5em 0 .5em 0;
+    color: black;
+    order: 1;
+}
+.featured h1{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5em;
+    color: black;
+}
+.featured figure img{
+    border-radius: 5px;
+}
+.featured figcaption{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: .75em auto .25em auto;
+}
+.featured figcaption p{
+    font-family: 'Open Sans', italic, sans-serif;
+    font-size:1em;
+    padding: .75em;
+}
+figcaption h4{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 1em;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+}
+#artistBio{
+    display: none;
+}
+#spotlight{
+    width: 100%;
+    height: auto;
+    background-color: rgba(128, 183, 203, .9);
+    order: 2;
+}
+#spotlight input{
+    border-radius: 5px;
+    background-color: rgba(192, 195, 223, .5);
+    margin: 1em;
+}
+#vivi{
+    width:100%;
+    height:auto;
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 5px 10px 11px 1px #696969
+}
+#spotlight p{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+   padding: 1em .25em 1em .25em;
+    text-align: left;
+    text-indent: 2em;
+}
+#spotlight p span{
+    font-weight: bold;
+    font-size: 4em;
+    font-family: serif;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    color: #ffffff;
+}
+#spotlight .firma img{
+    width: 30%;
+    height: auto;
+    margin-left: 10%;
+}
+figcaption{
+    font-family: inherit;
+    font-size: 1em;
+    color: #ffffff;
+    margin: .5em 0 .5em .25em;
+}
+/*end of styling for featured artist, container 2*/
+
+/*begin styling for footer container*/
+.container_4{
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #000000;
+}
+.contactUs{
+    font-family: 'Open Sans', cursive, sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5em;
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    padding:.25em;
+    order: 3;
+    align-self: center;
+}
+.contactUs span{
+    display: block;
+}
+.contactUs p{
+    font-weight: 900;
+}
+#footer-nav h3{
+    display:block;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color:#D5D5D5;
+    padding: .5em;
+}
+#footer-nav img{
+    display: inline;
+    width: 15%;
+    height: auto;
+    padding: .25em;
+    align-self: center;
+}
+/*end styling for footer container*/
+
+/*begin responsive styling, media queries*/
+@media screen and (min-width: 400px) {
+     #panel{
+         margin-bottom: 10em;
+     }
+}
+
+@media screen and (min-width: 500px){
+    /*  Adjustments for the Header in Featured Artist*/
+    #brand h1{
+        font-size: 2em;
+    }
+    #brand h2{
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 650px){
+    #panel{
+        margin-bottom: 15em;
+    }
+    div#signup div#panel p{
+        display: block;
+        font-family: 'Open Sans', italic, sans-serif;
+        font-size: 1em;
+        line-height: 1.75em;
+        color: #ffffff;
+        font-variant: all-petite-caps;
+        padding: 2em;
+        text-align: left;
+    }
+}
+@media screen and (min-width: 750px){
+    #spotlight input{
+        width: 30%;
+        height: 2.75em;
+        margin: 1em;
+    }
+    #panel{
+        max-width:75%;
+        padding: .5em;
+        margin-top: 5em;
+    }
+    #nzandevnts figure{
+        margin-left: 10%;
+    }
+    .featured h2{
+        font-size: 3em;
+    }
+    .featured h1 {
+        font-size: 2em;
+    }
+    div.featured figure figcaption h3{
+        font-size: 2em;
+    }
+    div.featured figure figcaption{
+        font-size: 1.2em;
+    }
+    #artistBio{
+        display: block;
+    }
+    #spotlight input{
+        display: none;
+    }
+}
+@media screen and (min-width: 850px){
+    #panel{
+        padding: 1em;
+    }
+    .nav{
+        display: block;
+    }
+    .nav ul {
+        height: auto;
+        padding: .5em 0;
+        margin: 0;
+    }
+    .nav li {
+        display: inline;
+        padding: .5em;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: .25em;
+    }
+    .nav li:hover {
+        color: #844AD2;
+        background-color: rgba(0,0,0, .5);
+        width: 100%;
+        border-radius: 6px;
+    }
+    div#container_1 section input{
+        display:none;
+    }
+    #aboutUs{
+        display: block;
+    }
+    div#container_1 section h2{
+        font-size: 2em;
+    }
+    div#container_1 section h3{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #panel{
+        margin-bottom: 20em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #panel{
+        width: 60%;
+        margin-bottom: 25em;
+    }
+    div#container_1 section p{
+        font-family: 'Open Sans', italic, sans-serif;
+        line-height: 1.25em;
+        text-align: left;
+        padding: 1.75em;
+    }
+    #container_1 section h2{
+        font-size: 1.25em;
+        font-weight: 600;
+        text-align: center;
+    }
+    #container_1 section h3{
+        font-family: inherit;
+        font-style: italic;
+        font-size: 1em;
+        font-weight: 800;
+        color: #967AF2;
+        text-align: center;
+        padding: .30em;
+    }
+}
