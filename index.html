@@ -44,13 +44,17 @@
 		<h2>Welcome to Art Basel</h2>
 		<h3>Miami's International Art Festival</h3>
 
-		<p>Since 1970, Art Basel’s goal has been to connect the world's premier galleries and their patrons,
-			as well serving as a meeting point for the international artworld. Now, over forty years later,
-			its three fairs - in Basel, Hong Kong and Miami Beach - rank as the premier shows of their kind,
-			presenting 20th and 21st century art with a strong curatorial perspective.</p>
+		<input type="button" onclick="return aboutUsBtn('aboutUs')" value="More About Us, Click Here.">
+		<div id="aboutUs">
+			<p>Since 1970, Art Basel’s goal has been to connect the world's premier galleries and their patrons,
+				as well serving as a meeting point for the international artworld. Now, over forty years later,
+				its three fairs - in Basel, Hong Kong and Miami Beach - rank as the premier shows of their kind,
+				presenting 20th and 21st century art with a strong curatorial perspective.</p>
 
-		<p>Our reputation for showing high quality work has attracted leading international galleries and collectors,
-			offering visitors the most important art from around the world.</p>
+			<p>Our reputation for showing high quality work has attracted leading international galleries and collectors,
+				offering visitors the most important art from around the world.</p>
+		</div>
+
 	</section>
 
 
@@ -69,7 +73,7 @@
 		<input id="signUpInput" type="text" name="email" placeholder="email">
 		<input id="inputButton" type="submit" value="Subscribe">
 	</div><!--closes the Panel div-->
-</div><!-- closes the Sign Up Cntainer div -->
+</div><!-- closes the Sign Up Container div -->
 
 <div id="video">
 	<div class="nav">
@@ -82,7 +86,7 @@
 		</nav>
 	</div> <!-- closes the nav id div -->
 	<h1>Art Basel 2015</h1>
-	<video src="video/mia.mp4" poster="photos/poster.PNG" preload controls muted >  </video>
+	<video src="video/mia.mp4" poster="photos/poster.PNG" preload autoplay controls muted >  </video>
 </div>
 
 <div id="container_3">
@@ -242,25 +246,39 @@
 			<span>Hours: Monday - Friday · 9AM–5PM</span>
 		</address>
 	</div><!-- closes the Contact Us div -->
-	<div class="nav" id="footer-nav">
+	<div class="navSm" id="footer-nav">
 		<h3>Follow Us</h3>
 		<a href="https://www.facebook.com/artbasel">
-			<img src="photos/Facebook.png" alt="Instagram">
+			<img src="photos/Facebook.png" alt="Facebook">
 		</a>
 		<a href="https://twitter.com/ArtBasel">
-			<img src="photos/Twitter.png" alt="Instagram">
+			<img src="photos/Twitter.png" alt="Twitter">
 		</a>
 		<a href="https://www.instagram.com/artbasel/?hl=en">
 			<img src="photos/Instagram.png" alt="Instagram">
 		</a>
 		<a href="https://plus.google.com/+artbasel">
-			<img src="photos/Googleplus.png" alt="Instagram">
+			<img src="photos/Googleplus.png" alt="Google Plus">
 		</a>
 		<a href="https://www.youtube.com/user/artbasel">
-			<img src="photos/Youtube.png" alt="Instagram">
+			<img src="photos/Youtube.png" alt="YouTube">
 		</a>
 	</div><!--closes footer-nav div -->
 </div><!--closes container 4 div links-->
+
+<script type="text/javascript">
+	function aboutUsBtn(a){
+		var e=document.getElementById(a);
+		if(!e)return true;
+		if(e.style.display=="none"){
+			e.style.display="block"
+		}
+		else{
+			e.style.display="none"
+		}
+		return true;
+	}
+</script>
 
 <script type="text/javascript">
 	function bioButton(a){
@@ -275,17 +293,5 @@
 		return true;
 	}
 </script>
-<!--<script>
-	$("#slideshow > div:gt(0)").hide();
-
-	setInterval(function() {
-		$('#slideshow > div:first')
-				.fadeOut(1000)
-				.next()
-				.fadeIn(1000)
-				.end()
-				.appendTo('#slideshow');
-	},  3000);
-</script>-->
 </body>
 </html>
